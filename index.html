@@ -382,14 +382,14 @@ const gameData = {
                 successMessage: 'Helyes!Szent István testvére Koppány volt. Hint: autó'
             },
             7: { /* Spot Difference */
-                image1: 'https://via.placeholder.com/400x300/FFEB3B/000000?text=Sárga+Kép+A',
-                image2: 'https://via.placeholder.com/400x300/FFEB3B/000000?text=Sárga+Kép+B',
+                image1: 'https://github.com/Eroan21/myrepo/blob/main/szentistvan.jpg?raw=true',
+                image2: 'https://github.com/Eroan21/myrepo/blob/main/szentistvan_processed.jpg?raw=true',
                 // Coordinates: {x, y, r} as percentage of image width/height
                 // x: from left, y: from top, r: radius
                 differences: [
-                    { x: 20, y: 30, r: 5 }, { x: 50, y: 50, r: 5 },
-                    { x: 80, y: 70, r: 5 }, { x: 10, y: 85, r: 5 },
-                    { x: 90, y: 15, r: 5 }
+                    { x: 45, y: 20, r: 10 }, { x: 13, y: 5, r: 8 },
+                    { x: 92, y: 33, r: 9 }, { x: 75, y: 85, r: 7 },
+                    { x: 22, y: 94, r: 8 }
                 ],
                 successMessage: 'Gratulálunk, minden különbséget megtaláltatok! A cél...'
             }
@@ -435,10 +435,14 @@ const gameData = {
                 successMessage: 'Minden válasz helyes! A következő állomás ajtó'
             },
             7: {
-                image1: 'https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=Zöld+Kép+A',
-                image2: 'https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=Zöld+Kép+B',
-                differences: [ { x: 25, y: 25, r: 5 }, { x: 55, y: 55, r: 5 }, { x: 85, y: 75, r: 5 }, { x: 15, y: 80, r: 5 }, { x: 95, y: 20, r: 5 } ],
-                successMessage: 'Zöld csapat - Gratulálunk, minden különbséget megtaláltatok! A cél...'
+                image1: 'https://github.com/Eroan21/myrepo/blob/main/lalszlo.jpg?raw=true',
+                image2: 'https://github.com/Eroan21/myrepo/blob/main/lalszlo_processed.jpg?raw=true',
+                differences: [  { x: 10, y: 35, r: 8 }, 
+                                { x: 75, y: 10, r: 13 }, 
+                                { x: 30, y: 70, r: 5 }, 
+                                { x: 73, y: 80, r: 15 }, 
+                                { x: 47, y: 78, r: 8 } ],
+                successMessage: 'Gratulaaa!!!'
             }
         }
     },
@@ -463,9 +467,14 @@ const gameData = {
                     { q: 'Hány ország királya volt?', o: ['3', '1', '5'], a: '3' },
                     { q: 'Melyik a kakukktolyás', o: ['Dalmácia', 'Horvátország', 'Agartha'], a: 'Agartha' },
                     { q: 'Hol koronázták Magyarország királyává', o: ['Tengerfehérvár', 'Gyulafehérvár', 'Székesfehérvár'], a: 'Székesfehérvár' },
-                    { q: 'Igen?', o: ['Igen', 'Nem', 'Lehet'], a: 'Igen' } ],
-                     successMessage: 'Kész! Következő állomás: játszótér'},
-            7: { image1: 'https://github.com/Eroan21/myrepo/blob/main/kalman.jpg?raw=true', image2: 'https://github.com/Eroan21/myrepo/blob/main/kalman_processed.jpg?raw=true', differences: [ { x: 10, y: 10, r: 5 }, { x: 90, y: 90, r: 5 }, { x: 50, y: 80, r: 5 }, { x: 20, y: 60, r: 5 }, { x: 70, y: 20, r: 5 } ], successMessage: 'Piros csapat - Célba értetek!'}
+                    { q: 'Mi volt Kálmán ismert neve?', o: ['Könyves Kálmán', 'Nagy Kálmán', 'Zord Kálmám'], a: 'Könyves Kálmán' } ],
+                     successMessage: 'Piros csapat - Kész! Következő állomás: játszótér'},
+            7: { image1: 'https://github.com/Eroan21/myrepo/blob/main/kalman.jpg?raw=true', image2: 'https://raw.githubusercontent.com/Eroan21/myrepo/refs/heads/main/kalman_processed.jpg', 
+            differences: [
+                    { x: 20, y: 10, r: 10 }, { x: 62, y: 30, r: 5 },
+                    { x: 65, y: 10, r: 5 }, { x: 65, y: 55, r: 5 },
+                    { x: 62, y: 42, r: 5 }
+                ], successMessage: 'Piros csapat - Célba értetek!'}
         }
     },
     blue: {
@@ -479,7 +488,7 @@ const gameData = {
                 gridSize: 5, 
                 successMessage: 'Kék csapat - Ügyesek! Következő állomás...'},
             6: { questions: [ { q: 'Kék csapat - 1. kérdés?', o: ['Helyes', 'Rossz'], a: 'Helyes' } ], successMessage: 'Kék csapat - Kész! Következő állomás...'},
-            7: { image1: 'https://via.placeholder.com/400x300/2196F3/FFFFFF?text=Kék+Kép+A', image2: 'https://via.placeholder.com/400x300/2196F3/FFFFFF?text=Kék+Kép+B', differences: [ { x: 10, y: 10, r: 5 }, { x: 90, y: 90, r: 5 }, { x: 50, y: 80, r: 5 }, { x: 20, y: 60, r: 5 }, { x: 70, y: 20, r: 5 } ], successMessage: 'Célba értetek!'}
+            7: { image1: 'https://via.placeholder.com/400x300/2196F3/FFFFFF?text=Kék+Kép+A', image2: 'https://via.placeholder.com/400x300/2196F3/FFFFFF?text=Kék+Kép+B', differences: [ { x: 15, y: 85, r: 6 }, { x: 85, y: 15, r: 6 }, { x: 50, y: 50, r: 6 }, { x: 25, y: 45, r: 6 }, { x: 75, y: 65, r: 6 } ], successMessage: 'Kék csapat - Célba értetek!'}
         }
     }
 };
